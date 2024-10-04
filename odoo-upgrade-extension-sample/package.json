@@ -16,8 +16,18 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "odoo.upgradeModule",
+				"title": "Upgrade Module in Odoo15",
+				"category": "Odoo"
+			}
+		]
+	},
+	"menus": {
+		"explorer/context": [
+			{
+				"command": "odoo.upgradeModule",
+				"when": "resourceType == 'folder'",
+				"group": "navigation"
 			}
 		]
 	},
